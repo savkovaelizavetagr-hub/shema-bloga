@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Пошаговая схема развития блога · Елизавета Савкова</title>
+<meta name="description" content="Темы, смыслы, сценарий, якоря и 30 дней reels: схема, по которой я набрала 90.000 аудитории за полгода">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Пошаговая схема развития блога">
+<meta property="og:description" content="Темы, смыслы, сценарий, якоря и 30 дней reels: схема, по которой я набрала 90.000 аудитории за полгода">
+<meta property="og:image" content="https://savkovaelizavetagr-hub.github.io/shema-bloga/img/og.jpg">
+<meta property="og:url" content="https://savkovaelizavetagr-hub.github.io/shema-bloga/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23645c52'/%3E%3Ctext x='16' y='22' font-size='20' text-anchor='middle' fill='%23f7f5f2' font-family='Georgia' font-style='italic'%3E%D1%81%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap">
+<style>
+/* layout: как на сайте практикума — белое поле, крупный каллиграфичный курсив, светлый гротеск, текст «лесенкой» со смещёнными отступами; одна светлая тема намеренно */
+:root{
+  --bg:#ffffff;
+  --fg:#1c1b19;
+  --muted:#5e5a55;
+  --line:#dcd7d0;
+  --taupe:#645c52;
+  --soft:#f6f4f1;
+  --script:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:56px 72px}
+p{margin:0}
+.script{font-family:var(--script);font-style:italic;font-weight:300;letter-spacing:-.01em;line-height:.95;text-wrap:balance;margin:0}
+.br{font-style:italic}
+.br::before{content:"[ "}.br::after{content:" ]"}
+.lead-sm{font-size:clamp(1.1rem,3.4vw,1.4rem);font-weight:300;line-height:1.2}
+.indent{padding-left:30%}
+.indent-s{padding-left:14%}
+@media (max-width:560px){.indent{padding-left:12%}.indent-s{padding-left:6%}}
+.stack{display:flex;flex-direction:column;gap:22px}
+.muted{color:var(--muted)}
+a{color:var(--fg)}
+
+/* обложка */
+.cover{position:relative;width:100%;min-height:min(58svh,520px);display:flex;overflow:hidden;background:#2b2724}
+.cover-img{position:absolute;inset:0;width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center 45%}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.45) 0%,rgba(20,18,16,.15) 35%,rgba(20,18,16,.25) 65%,rgba(20,18,16,.6) 100%)}
+.cover-inner{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px;max-width:760px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:40px;color:#fff;text-align:center}
+.cover-top{width:100%;display:flex;justify-content:space-between;gap:12px;font-size:.82rem;color:rgba(255,255,255,.82)}
+.cover-title{display:flex;flex-direction:column;gap:16px;align-items:center}
+.cover-title h1{font-size:clamp(3rem,11vw,5rem);color:#fff}
+.cover-title p{font-size:clamp(.74rem,2.6vw,.95rem);font-weight:300;color:#fff;white-space:nowrap}
+.cover-shots{position:absolute;left:max(16px,env(safe-area-inset-left,0px));bottom:48px;width:clamp(120px,26vw,190px);height:clamp(110px,24vw,170px);pointer-events:none}
+.cover-shots img{position:absolute;width:100%;max-width:100%;display:block;border:3px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.cover-shots .s1{left:0;top:0;transform:rotate(-4deg)}
+.cover-shots .s2{left:26%;top:58%;transform:rotate(3deg)}
+.cover-inner{padding-bottom:max(40px,calc(clamp(110px,24vw,170px) + 56px))}
+.cover-btn{display:block;width:100%;max-width:380px;background:#f7f5f2;color:var(--fg);text-decoration:none;font-family:var(--script);font-style:italic;font-size:1.5rem;padding:16px 20px;transition:opacity .15s}
+.cover-btn:hover{opacity:.9}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* hero */
+.hero{display:flex;flex-direction:column;gap:26px;text-align:center;align-items:center}
+.hero h1{font-size:clamp(2.8rem,9vw,4.4rem)}
+.hero .sub{font-size:clamp(1rem,3vw,1.2rem);line-height:1.35}
+.photo{width:100%;max-width:100%;display:block}
+.intro{max-width:32em}
+.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:100%;text-align:left}
+.ba figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.ba figcaption{font-size:1.05rem}
+.ba img,.side img,.proof-wide,.stat-shots img{width:100%;max-width:100%;display:block;border:1px solid var(--line)}
+@media (max-width:560px){.ba{grid-template-columns:1fr}}
+.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:100%;align-items:center}
+@media (max-width:560px){.side{grid-template-columns:1fr}}
+.stat-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.stat-shots .br{white-space:nowrap}
+.stat-shots figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.stat-shots figcaption{font-size:.88rem;color:var(--muted);line-height:1.35}
+
+.stats{display:flex;justify-content:center;gap:clamp(20px,6vw,56px);flex-wrap:wrap;text-align:center}
+.stats .num{font-family:var(--script);font-style:italic;font-weight:300;font-size:clamp(2.4rem,8vw,3.4rem);line-height:1;font-variant-numeric:tabular-nums}
+.stats .lbl{font-size:.95rem;color:var(--muted)}
+
+/* sections */
+section{padding-block:72px 8px;position:relative}
+.head{display:flex;flex-direction:column;gap:4px;position:relative}
+.head h2{font-size:clamp(3rem,10vw,4.6rem)}
+.ghost{position:absolute;right:0;top:-34px;font-family:var(--script);font-style:italic;font-weight:300;font-size:9rem;line-height:1;color:var(--taupe);opacity:.12;pointer-events:none;user-select:none}
+.quote{font-family:var(--script);font-style:italic;font-weight:400;font-size:clamp(1.6rem,4.6vw,2.1rem);line-height:1.15}
+.stars{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.stars li{padding-left:24px;position:relative}
+.stars li::before{content:"✻";position:absolute;left:0;top:0;color:var(--muted);font-size:.9em}
+b{font-weight:500}
+
+/* три фото */
+.trio-labels{display:flex;flex-wrap:wrap;gap:6px 28px;font-size:clamp(1rem,3vw,1.2rem)}
+.trio-labels span::before{content:"✻ ";color:var(--muted)}
+.photo{aspect-ratio:4/3;object-fit:cover}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.trio figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.trio figcaption{font-size:clamp(1rem,3vw,1.3rem);line-height:1.1}
+.trio figcaption::before{content:"✻ ";color:var(--muted)}
+.trio img{width:100%;max-width:100%;aspect-ratio:2/3;object-fit:cover;display:block}
+
+/* audio */
+.audio{display:flex;align-items:center;gap:12px;font-size:.92rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:12px}
+.audio .dot{width:30px;height:30px;border-radius:50%;border:1px solid var(--taupe);display:grid;place-items:center;flex:none}
+.audio .dot::after{content:"";border-left:8px solid var(--taupe);border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:3px}
+
+/* плеер */
+.audio.ready{color:var(--fg);text-align:left}
+.audio.ready .play{width:38px;height:38px;border-radius:50%;border:1px solid var(--taupe);background:var(--bg);display:grid;place-items:center;flex:none;cursor:pointer;padding:0}
+.audio.ready .play:hover{background:var(--soft)}
+.audio.ready .play svg{width:14px;height:14px;fill:var(--taupe)}
+.audio .a-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.audio .a-title{font-size:.92rem}
+.audio .a-row{display:flex;align-items:center;gap:10px}
+.audio .a-bar{flex:1;height:2px;background:var(--line);position:relative;cursor:pointer;touch-action:none}
+.audio .a-bar::after{content:"";position:absolute;inset:-10px 0}
+.audio .a-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--taupe)}
+.audio .a-time{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
+
+/* diagram */
+.figure{display:flex;flex-direction:column;align-items:center;gap:8px;padding-block:10px}
+.figure svg{width:100%;max-width:440px;height:auto}
+.svg-line{stroke:var(--taupe);stroke-width:.8;fill:none}
+.svg-node{stroke:var(--line);stroke-width:1;fill:var(--bg)}
+.svg-core{stroke:var(--fg);stroke-width:.8;fill:var(--bg)}
+.svg-text{fill:var(--fg);font-family:var(--script);font-style:italic;font-weight:400;font-size:18px}
+.svg-core-text{fill:var(--fg);font-family:var(--script);font-style:italic;font-weight:300;font-size:42px}
+.svg-core-sub{fill:var(--muted);font-family:var(--sans);font-weight:300;font-size:11px}
+.cap{font-size:.9rem;color:var(--muted)}
+
+/* tasks */
+.task{background:var(--soft);padding:24px;display:flex;flex-direction:column;gap:16px}
+.task .t-title{font-family:var(--script);font-style:italic;font-weight:400;font-size:1.9rem;line-height:1}
+label{font-size:.95rem;font-weight:400;display:block;margin-bottom:6px}
+label span{color:var(--muted);font-weight:300}
+textarea{width:100%;min-height:88px;resize:vertical;border:1px solid var(--line);border-radius:0;background:var(--bg);color:var(--fg);font:inherit;font-size:1rem;padding:10px 12px;line-height:1.5}
+textarea:focus-visible,button:focus-visible,a:focus-visible{outline:1px solid var(--taupe);outline-offset:2px}
+
+/* сценарий */
+.struct{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:10px}
+.struct div{border:1px solid var(--line);padding:16px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.struct div:first-child{border-color:var(--taupe)}
+.struct strong{font-family:var(--script);font-style:italic;font-weight:400;font-size:1.7rem;line-height:1}
+.struct small{color:var(--muted);font-size:.88rem;line-height:1.35}
+@media (max-width:520px){.struct{grid-template-columns:1fr}}
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 12px}
+@media (max-width:620px){.reels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.reel{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.reel img,.slot-box{width:100%;max-width:100%;aspect-ratio:600/821;object-fit:cover;display:block}
+.reel figcaption{display:flex;flex-direction:column;gap:4px}
+.reel .hl{font-size:clamp(1.05rem,2.6vw,1.25rem);padding:0;border:none}
+.reel .views{font-size:.8rem;color:var(--muted)}
+.slot-box{border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:.85rem;text-align:center;padding:12px}
+.heads{display:flex;flex-direction:column}
+.hl{font-family:var(--script);font-style:italic;font-weight:400;font-size:clamp(1.35rem,4vw,1.65rem);line-height:1.2;padding-block:14px;border-bottom:1px solid var(--line)}
+.hl:first-child{border-top:1px solid var(--line)}
+
+/* якоря */
+.anchors{display:flex;flex-wrap:wrap;gap:8px 28px;font-family:var(--script);font-style:italic;font-weight:300;font-size:clamp(2rem,7vw,2.8rem);line-height:1}
+.anchors span::before{content:"✻ ";font-family:var(--sans);font-style:normal;font-size:.5em;color:var(--muted);vertical-align:middle}
+
+/* 30 дней */
+.cycle{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;font-size:1rem}
+.cycle span{border:1px solid var(--line);padding:6px 14px}
+.cycle i{color:var(--taupe);font-style:normal}
+.days{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+.day{aspect-ratio:1;max-width:100%;border:1px solid var(--line);border-radius:0;background:var(--bg);color:var(--muted);font:inherit;font-size:.85rem;font-variant-numeric:tabular-nums;cursor:pointer;padding:0;transition:background .15s,border-color .15s}
+.day:hover{border-color:var(--taupe)}
+.day[aria-pressed="true"]{background:var(--taupe);border-color:var(--taupe);color:#fff}
+@media (max-width:420px){.days{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.progress{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.progress .count{font-family:var(--script);font-style:italic;font-size:1.8rem}
+.reset{background:none;border:none;color:var(--muted);font:inherit;font-size:.85rem;text-decoration:underline;cursor:pointer;padding:0}
+
+/* площадки */
+.flow{display:flex;align-items:stretch}
+.pf{flex:1;min-width:0;border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:6px}
+.pf.main{border-color:var(--taupe)}
+.pf .name{font-family:var(--script);font-style:italic;font-weight:400;font-size:2rem;line-height:1}
+.pf small{color:var(--muted);font-size:.88rem;line-height:1.35}
+.arrow{flex:none;width:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--taupe);font-size:.72rem;text-align:center;line-height:1.2}
+.arrow::before{content:"→";font-size:1.4rem;line-height:1}
+@media (max-width:620px){
+  .flow{flex-direction:column}
+  .arrow{width:auto;flex-direction:row;padding:10px 0}
+  .arrow::before{content:"↓"}
+}
+
+/* итоговая майнд-карта */
+.map{border:1px solid var(--line);padding:28px clamp(16px,4vw,32px) 32px}
+.map-root{display:inline-flex;flex-direction:column;gap:4px;border:1px solid var(--taupe);padding:14px 20px;max-width:100%}
+.map-root .script{font-size:clamp(1.9rem,6vw,2.6rem);line-height:1}
+.map-root small{font-size:.85rem;color:var(--muted)}
+.trunk{list-style:none;margin:0;padding:0 0 0 48px;position:relative}
+.branch{position:relative;display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:8px 18px;padding-block:22px 6px}
+.branch::before{content:"";position:absolute;left:-31px;top:0;bottom:0;width:1px;background:var(--taupe)}
+.branch:last-child::before{bottom:auto;height:38px}
+.b-node{font-family:var(--script);font-style:italic;font-weight:400;font-size:1.75rem;line-height:1.1;position:relative;display:flex;align-items:center;min-height:32px}
+.b-node::before{content:"";position:absolute;left:-17px;top:50%;width:13px;height:1px;background:var(--taupe)}
+.n{position:absolute;left:-46px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:1px solid var(--taupe);background:var(--bg);display:grid;place-items:center;font-family:var(--sans);font-style:normal;font-size:.8rem;font-weight:400;color:var(--taupe)}
+.leaves{list-style:none;margin:0;padding:2px 0 0 16px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:6px;font-size:.92rem;line-height:1.35}
+.leaves li{position:relative}
+.leaves li::before{content:"";position:absolute;left:-16px;top:.68em;width:10px;height:1px;background:var(--line)}
+@media (max-width:560px){
+  .trunk{padding-left:44px}
+  .branch{grid-template-columns:minmax(0,1fr)}
+}
+
+/* копирование ответов */
+.copy-btn{width:fit-content;max-width:100%;background:var(--taupe);color:#fff;border:none;border-radius:0;font-family:var(--script);font-style:italic;font-size:1.3rem;padding:14px 26px;cursor:pointer;transition:opacity .15s}
+.copy-btn:hover{opacity:.88}
+.copy-status{font-size:.88rem;color:var(--taupe);min-height:1.2em}
+.copy-fallback{min-height:160px}
+.small-note{font-size:.8rem;color:var(--muted);line-height:1.45;max-width:42em}
+
+/* финал */
+.final{padding-block:88px 24px;display:flex;flex-direction:column;gap:24px}
+.final h2{font-size:clamp(3rem,10vw,4.6rem)}
+.btn{display:block;width:100%;max-width:440px;background:var(--taupe);color:#fff;text-decoration:none;text-align:center;font-family:var(--script);font-style:italic;font-weight:400;font-size:1.6rem;padding:22px 20px;transition:opacity .15s}
+.btn:hover{opacity:.88}
+.mini-btn{display:block;width:fit-content;max-width:100%;margin-left:30%;padding:10px 18px;border:1px solid var(--taupe);color:var(--taupe);text-decoration:none;font-family:var(--script);font-style:italic;font-size:1.15rem;line-height:1.1;transition:background .15s,color .15s}
+.mini-btn.indent{padding-left:18px}
+.mini-btn:hover{background:var(--taupe);color:#fff}
+@media (max-width:560px){.mini-btn{margin-left:12%}}
+.price{font-size:clamp(1.1rem,3.4vw,1.4rem)}
+footer{padding-top:40px;font-size:.85rem;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="cover">
+  <img class="cover-img" src="img/cover.jpg" alt="">
+  <div class="cover-inner">
+    <div class="cover-title">
+      <h1 class="script">пошаговая схема развития блога</h1>
+      <p>по которой я набрала 90.000 аудитории за полгода</p>
+    </div>
+    <div class="cover-shots" aria-hidden="true">
+      <img class="s1" src="img/before.jpg" alt="">
+      <img class="s2" src="img/after.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero" id="start">
+    <p class="intro">Мой подход в жизни — упрощать всё, что можно. То же самое я сделала с блогом. И после двух лет застоя за полгода я набрала 90.000 аудитории</p>
+    <div class="ba">
+      <figure><figcaption><span class="br">до</span></figcaption><img src="img/before.jpg" alt="Профиль Instagram до: 9 848 подписчиков"></figure>
+      <figure><figcaption><span class="br">после</span></figcaption><img src="img/after.jpg" alt="Профиль Instagram после: 93,9 тысячи подписчиков"></figure>
+    </div>
+    <div class="stats">
+      <div><div class="num">+90.000</div><div class="lbl">в Instagram</div></div>
+      <div><div class="num">+28.000</div><div class="lbl">в Telegram</div></div>
+      <div><div class="num">+2.000</div><div class="lbl">на YouTube</div></div>
+    </div>
+    <p class="muted">Telegram и YouTube выросли параллельно, как приятный бонус)</p>
+    <div class="side">
+      <img src="img/tg.jpg" alt="Telegram-канал: 29 855 подписчиков">
+      <img src="img/yt.jpg" alt="YouTube-канал: 2,03 тысячи подписчиков">
+    </div>
+    <div class="audio" style="width:100%" data-src="audio/a1-v2-raw.mp3" data-title="аудио: с чего всё начинается"><span class="dot"></span>аудио: с чего всё начинается</div>
+  </header>
+
+  <section id="reach">
+    <div class="stack">
+      <div class="head">
+        <p class="lead-sm">как изменились охваты</p>
+        <h2 class="script">было и стало</h2>
+      </div>
+      <p class="lead-sm indent-s"><span class="br">было</span></p>
+      <img class="proof-wide" src="img/oldreach.jpg" alt="Старые рилс: 6 762, 4 905 и 3 498 просмотров">
+      <p class="indent-s muted">так выглядели мои охваты до: несколько тысяч просмотров на рилс</p>
+      <p class="lead-sm indent-s"><span class="br">стало</span></p>
+      <div class="stat-shots">
+        <figure><img src="img/stat3.jpg" alt="Статистика рилс: 785 466 просмотров, 18 110 подписок"><figcaption>785 тыс. просмотров и <span class="br">18 110</span> подписок с одного рилс</figcaption></figure>
+        <figure><img src="img/stat1.jpg" alt="Статистика рилс «Зачем вообще искать богатого мужа?»: 201 144 просмотра, 2 123 подписки"><figcaption>201 тыс. просмотров</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="stack">
+      <div class="head">
+        <p class="lead-sm">свой подход я называю</p>
+        <h2 class="script">маркетинг личности</h2>
+      </div>
+      <p class="indent lead-sm">когда в основе вашего блога, вашего контента, ваших смыслов стоите ВЫ</p>
+      <div class="trio-labels"><span>ваши смыслы</span><span>ваш подход</span><span>ваша личность</span></div>
+      <img class="photo" src="img/desk.jpg" alt="Рабочий стол с эскизами, кофе и материалами">
+      <p class="indent">Всё в блоге исходит из «я», из себя. Тогда темы будут сильные, и блог будет расти просто потому, что <span class="br">людям нужны люди</span>. Не очередной контент на тему, которая «работает», а то, в чём очень много вашей энергии</p>
+      <div class="figure">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Схема: в центре Я (ваш личный бренд), от него лучи к темам, смыслам, формату, деталям, образу и стратегии">
+          <g id="rays"></g>
+          <circle class="svg-core" cx="200" cy="200" r="58"/>
+          <text class="svg-core-text" x="200" y="202" text-anchor="middle">Я</text>
+          <text class="svg-core-sub" x="200" y="222" text-anchor="middle">(ваш личный</text>
+          <text class="svg-core-sub" x="200" y="236" text-anchor="middle">бренд)</text>
+        </svg>
+        <div class="cap">всё исходит из вас</div>
+      </div>
+      <div class="audio" data-src="audio/a2.mp3" data-title="аудио: что такое маркетинг личности"><span class="dot"></span>аудио: что такое маркетинг личности</div>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="stack">
+      <div class="head">
+        <span class="ghost">1</span>
+        <p class="lead-sm">шаг первый</p>
+        <h2 class="script">темы</h2>
+      </div>
+      <p class="indent-s">Первый шаг в стратегии блога — понять, какие темы мы в блоге охватываем. Личный бренд не обязательно должен строиться на одной теме. Их может быть несколько, разных. У меня в блоге разные темы</p>
+      <p class="indent">Ваша тема — это то, о чём интересно говорить, о чём хочется говорить, о чём вы можете говорить много: снимать много видео, делать много материалов</p>
+      <p class="lead-sm">откуда брать темы</p>
+      <ul class="stars">
+        <li><b>из недавнего опыта или результата.</b> У вас появился новый опыт или результат в какой-то теме, вам интересно, и вы можете этим делиться</li>
+        <li><b>из своей цели и вектора.</b> За основу берёте не результат, а цель и тему, которая интересна вам, даже если результата в ней ещё нет</li>
+      </ul>
+      <p class="indent-s">Например, одна из тем моего блога — финансовая грамотность и финансовая свобода. Я рассказываю про свою цель стать финансово свободной и создать большой капитал. Большого капитала у меня ещё нет, но мне это интересно, я это изучаю, и тема для меня очень объёмная. Она родилась из вопроса: какие у меня цели, что мне сейчас самой интересно</p>
+      <p class="indent">Более того, тема может быть вообще не связана с вашей экспертностью. Моим сильным ограничителем было то, что я думала: нужно снимать и рассказывать про запуски онлайн-проектов, про воронки продаж, потому что это моя экспертность. Но мне не хотелось об этом говорить. И вот эта установка «нужно говорить только о своей экспертности» меня ограничивала</p>
+      <p class="quote indent">тема должна в первую очередь зажигать вас сейчас, должна быть интересна именно вам</p>
+      <p class="indent-s">Возможно, вы сразу назовёте свои темы. А возможно, понадобится брейншторм: поразгонять мысли, в диалоге нащупать, на какие темы сейчас интересно говорить, где много мыслей и много энергии</p>
+      <p class="quote indent-s">для начала достаточно двух-трёх тем. это темы, с которыми вас по итогу будут ассоциировать</p>
+      <div class="task">
+        <div class="t-title">задание: найдите свои темы</div>
+        <div><label for="t-exp">Мой недавний опыт или результат <span>— чем я могу делиться уже сейчас</span></label><textarea id="t-exp" data-save></textarea></div>
+        <div><label for="t-goal">Мои цели и вектор <span>— что мне сейчас самой интересно</span></label><textarea id="t-goal" data-save></textarea></div>
+        <div><label for="t-final">Мои 2–3 темы <span>— о чём я могу говорить много</span></label><textarea id="t-final" data-save></textarea></div>
+      </div>
+      <div class="audio" data-src="audio/a3.mp3" data-title="аудио: как я нашла свои темы"><span class="dot"></span>аудио: как я нашла свои темы</div>
+    </div>
+  </section>
+
+  <section id="meanings">
+    <div class="stack">
+      <div class="head">
+        <span class="ghost">2</span>
+        <p class="lead-sm">шаг второй</p>
+        <h2 class="script">смыслы</h2>
+      </div>
+      <p class="indent-s">Смыслы — это уже следующий уровень. Они вытекают из тем. Простыми словами, смыслы — это <span class="br">ваши убеждения</span> в рамках темы</p>
+      <p class="indent">На тему финансов можно говорить много всего разного. Но у меня есть свои убеждения:</p>
+      <ul class="stars indent">
+        <li>девушка должна зарабатывать сама</li>
+        <li>девушке важно прийти к финансовой свободе</li>
+        <li>деньги важнее минутных удовольствий и трат</li>
+      </ul>
+      <p class="indent">И эти убеждения я уже расшиваю на смыслы в своём блоге</p>
+      <p class="quote indent-s">смыслы — это то, во что вы очень верите. то, за что вы готовы «топить» и готовы поспорить, даже если кто-то с вами не согласен</p>
+      <div class="task">
+        <div class="t-title">задание: найдите свои смыслы</div>
+        <div><label for="m-belief">Мои убеждения по каждой теме <span>— во что я по-настоящему верю</span></label><textarea id="m-belief" data-save></textarea></div>
+        <div><label for="m-argue">О чём со мной могут не согласиться <span>— а я готова отстаивать своё мнение</span></label><textarea id="m-argue" data-save></textarea></div>
+      </div>
+      <div class="audio" data-src="audio/a4.mp3" data-title="аудио: как раскопать свои убеждения"><span class="dot"></span>аудио: как раскопать свои убеждения</div>
+    </div>
+  </section>
+
+  <section id="script">
+    <div class="stack">
+      <div class="head">
+        <span class="ghost">3</span>
+        <p class="lead-sm">шаг третий</p>
+        <h2 class="script">сценарий</h2>
+      </div>
+      <p class="indent-s">Дальше задача — заземлить смыслы в сценарий. Какая бы крутая и гениальная ни была мысль, она не будет работать, если не соответствует правилам алгоритмов</p>
+      <p class="indent">У всех рилс, которые залетают, есть структура, даже если кажется, что это просто поток мыслей. Все мои рилс сделаны по этой схеме, и любую свою мысль важно уложить в эту структуру</p>
+      <div class="struct">
+        <div><strong>заголовок</strong><small>самое важное: 30–50% того, залетит рилс или нет</small></div>
+        <div><strong>смысл</strong><small>ваша мысль, ваше убеждение</small></div>
+        <div><strong>вывод</strong><small>заключение</small></div>
+      </div>
+      <p class="quote indent-s">даже самую скучную, банальную мысль можно сказать цепко, интересно и под другим углом. и даже самую гениальную мысль можно сказать так, что никого она не зацепит</p>
+      <p class="indent">Поэтому нужно учиться формулировать свои мысли сильно. Не бояться высказывать своё мнение, не бояться, что с вами не согласятся. Это и есть индикатор того, что вы по-настоящему пошли в свои убеждения. В убеждениях всегда есть как минимум два мнения, и такие темы работают круче всего</p>
+      <p class="lead-sm">мои заголовки, которые я создала и часто использую, потому что они круто работают</p>
+      <div class="reels">
+        <figure class="reel"><img src="img/reel4.jpg" alt="Рилс с заголовком «Все, что нужно сделать девушке, чтобы жить жизнь своей мечты»"><figcaption><span class="hl">Всё, что нужно сделать девушке, чтобы жить жизнь своей мечты</span><span class="views">514 тыс. просмотров</span></figcaption></figure>
+        <figure class="reel"><img src="img/reel3.jpg" alt="Рилс с заголовком «Настоящее богатство это не сумочка Birkin»"><figcaption><span class="hl">Настоящее богатство — это не сумочка Birkin</span><span class="views">439 тыс. просмотров</span></figcaption></figure>
+        <figure class="reel"><img src="img/reel6.jpg" alt="Рилс с заголовком «Я набрала +15 тыс новой аудитории»"><figcaption><span class="hl">Я набрала +15 тыс новой аудитории!!!</span><span class="views">98,3 тыс. просмотров</span></figcaption></figure>
+        <figure class="reel"><img src="img/reel5.jpg" alt="Рилс с заголовком «Мой главный совет молодым девушкам»"><figcaption><span class="hl">Мой главный совет молодым девушкам</span><span class="views">56,9 тыс. просмотров</span></figcaption></figure>
+        <figure class="reel"><img src="img/reel2.jpg" alt="Рилс с заголовком «Правила, которые я взяла у роскошных и богатых женщин»"><figcaption><span class="hl">Правила, которые я взяла у роскошных и богатых женщин</span><span class="views">29 тыс. просмотров</span></figcaption></figure>
+        <figure class="reel"><img src="img/reel1.jpg" alt="Рилс с заголовком «Мне 25 лет и я иду к цели 1 млн$ капитала»"><figcaption><span class="hl">Мне 25 лет, и я иду к цели 1 млн$ капитала</span><span class="views">11,4 тыс. просмотров</span></figcaption></figure>
+      </div>
+      <p class="indent-s">Эти заголовки цепляют благодаря тому, как они сформулированы. Поэтому мои рилс набирают большие просмотры, и их интересно смотреть</p>
+      <p class="quote indent"><span class="br">главное правило</span> в блоге должна быть энергия</p>
+      <p class="indent-s">Рилс никогда не будет виральным, если в нём нет энергии. А энергии в нём не будет, если для вас это очень сложный, долгий процесс, как рабочая задача. Информация как таковая никому не нужна. Людям нужна энергия. Ваша, как бы это ни звучало</p>
+      <p class="indent muted">Подробную структуру сценария, принципы разговорных рилс и то, как я создаю такие заголовки, мы подробно разберём на практикуме)</p>
+      <a class="mini-btn indent" href="https://elizavetasavkova.ru/praktikum" target="_blank" rel="noopener">присоединиться к практикуму · 1 000 ₽</a>
+    </div>
+  </section>
+
+  <section id="anchors">
+    <div class="stack">
+      <div class="head">
+        <span class="ghost">4</span>
+        <p class="lead-sm">шаг четвёртый</p>
+        <h2 class="script">якоря</h2>
+      </div>
+      <div class="anchors indent-s"><span>формат</span><span>детали</span><span>образ</span></div>
+      <p class="indent">Формат, в котором мы снимаем, детали, образ — это тоже наши якоря, с чем нас будут ассоциировать. Они не должны быть высосаны из пальца: они должны очень сильно отражать вас. Так и создаются якоречки. Многие уже узнают мой контент именно по тому, как он выглядит</p>
+      <p class="lead-sm indent-s">как я снимаю</p>
+      <p class="indent-s">Это иллюзия — думать, что каждый раз должна быть какая-то новая, невероятно цепляющая картинка. Практически все мои рилс сняты в одних и тех же местах, в одной и той же позе, в абсолютно одинаковом формате и подаче. Не нужно ничего сочинять и тратить энергию на поиск невероятных локаций</p>
+      <p class="indent">Найдите одно место, где вам нравится, как вы выглядите, где вам комфортно и удобно, то, что вы можете снимать регулярно. В идеале это ваша квартира или какое-то любимое место. Это картинка, которая естественным образом отражает вас: она не нарочито идеальная и не подобрана по примеру кого-то. Это картинка, которая нравится вам самим</p>
+      <p class="indent-s">Съёмке я уделяю минут десять-пятнадцать в день, между делом: когда забегаю выпить кофе или позавтракать. Не нужно специально выделять время и ставить съёмки в расписание, потому что это создаёт завышенную важность и как будто ограничивает вас в том, чтобы снимать и вести блог легко)</p>
+      <p class="indent muted">Как найти свои якоря, подробно разбираем на практикуме</p>
+      <a class="mini-btn indent" href="https://elizavetasavkova.ru/praktikum" target="_blank" rel="noopener">присоединиться к практикуму · 1 000 ₽</a>
+    </div>
+  </section>
+
+  <section id="days">
+    <div class="stack">
+      <div class="head">
+        <span class="ghost">5</span>
+        <p class="lead-sm">шаг пятый · стратегия</p>
+        <h2 class="script">30 дней reels</h2>
+      </div>
+      <p class="indent-s">Ни в коем случае не пишите кучу сценариев за раз, чтобы потом записать их пачкой и месяц выкладывать заранее снятые рилс. Мы снимаем в день один, максимум два ролика и выкладываем каждый день</p>
+      <p class="quote indent">чтобы блог начал расти, важно договориться с собой <span class="br">30 дней</span> выкладывать</p>
+      <p class="indent-s">Когда я выкладывала 30 дней подряд без остановки, мой блог резко начал расти и больше не останавливался. Самый мощный рост запустился именно в момент регулярности. Сейчас я стала выкладывать меньше, и блог так не растёт, охваты гораздо меньше. Поэтому я сама возвращаюсь и устраиваю себе 30 дней контента</p>
+      <div class="cycle">
+        <span>сняли</span><i>→</i><span>выложили</span><i>→</i><span>посмотрели отклик</span><i>→</i><span>записали следующий с учётом опыта</span>
+      </div>
+      <p class="indent">Смотрим, какой отклик, как сработал рилс, и как нам самим: понравилось или не понравилось говорить на эту тему. В какой-то момент вы увидите, какая тема у вас работает, какой заход, какая подача, какой формат, и дальше будете это масштабировать</p>
+      <p class="lead-sm indent-s">тестировать без ожиданий</p>
+      <p class="indent-s">На каждую из своих тем я просто написала свои мысли и структурировала их в сценарии. И начала, грубо говоря, тестировать, абсолютно сняв любые ожидания. Я просто начала смотреть, какой отклик получают эти темы</p>
+      <p class="lead-sm indent">масштабировать то, что откликается</p>
+      <p class="indent">Я увидела, что больше всего отклика (охватов, подписок) собирает тема денег, и начала её масштабировать. Если вы зайдёте в мой блог, вы увидите, что ~90% роликов и материалов, которыми я делюсь, про деньги и финансовую свободу. Потому что именно на эту тему я увидела максимальный отклик. То есть я протестировала три гипотезы, три разные темы, и увидела ту, которая сейчас работает лучше всего</p>
+      <p class="indent-s">Самое ключевое в моей стратегии: за первые три недели я чётко поняла, какие темы у меня работают, о чём мне нравится говорить и что собирает большой отклик. И дальше просто масштабировала. Я не придумываю каждый раз новые темы и новые фишки</p>
+      <div class="task">
+        <div class="t-title">мои 30 дней</div>
+        <p class="muted" style="font-size:.92rem">Отмечайте каждый день, когда выложили рилс</p>
+        <div class="days" id="days-grid" role="group" aria-label="30 дней публикаций"></div>
+        <div class="progress"><span class="count" id="days-count">0 из 30</span><button class="reset" id="days-reset" type="button">сбросить</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="platforms">
+    <div class="stack">
+      <div class="head">
+        <p class="lead-sm">как растут Telegram и YouTube</p>
+        <h2 class="script">схема площадок</h2>
+      </div>
+      <p class="indent-s">Самое главное — это рилс. Мы снимаем рилс, рилс, рилс. Рилс ведут в Telegram, а Telegram дальше ведёт на YouTube. Telegram и YouTube растут побочно, <span class="br">как бонус</span></p>
+      <div class="flow">
+        <div class="pf main"><span class="name">reels</span><small>основа роста. 60 секунд, чтобы зацепить смыслом</small></div>
+        <div class="arrow">кодовое слово<br>ссылка в шапке</div>
+        <div class="pf"><span class="name">telegram</span><small>те же темы глубже: материалы, мысли, аудио</small></div>
+        <div class="arrow">ссылки на видео</div>
+        <div class="pf"><span class="name">youtube</span><small>большие разборы тех же смыслов</small></div>
+      </div>
+      <p class="indent">Темы везде одни. В формате Reels мы не можем взаимодействовать с человеком больше 60 секунд. А Telegram и YouTube дают возможность на те же смыслы и те же темы сказать больше, ёмче и глубже</p>
+      <p class="indent-s">Из Instagram в Telegram люди переходят двумя путями: пишут кодовое слово в комментариях, и воронка выдаёт им материал в Telegram-канале, плюс в шапке профиля есть ссылка на канал</p>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="stack">
+      <div class="head">
+        <p class="lead-sm">вся схема на одном экране</p>
+        <h2 class="script">итог</h2>
+      </div>
+      <div class="map" role="img" aria-label="Итоговая схема: стратегия развития блога и шесть шагов">
+        <div class="map-root">
+          <span class="script">стратегия развития блога</span>
+          <small>в основе — Я (ваш личный бренд)</small>
+        </div>
+        <ol class="trunk">
+          <li class="branch">
+            <div class="b-node"><span class="n">1</span>темы</div>
+            <ul class="leaves">
+              <li>из недавнего опыта или результата</li>
+              <li>из своей цели и вектора</li>
+              <li>для начала 2–3 темы</li>
+            </ul>
+          </li>
+          <li class="branch">
+            <div class="b-node"><span class="n">2</span>смыслы</div>
+            <ul class="leaves">
+              <li>ваши убеждения в рамках темы</li>
+              <li>то, за что вы готовы «топить» и спорить</li>
+            </ul>
+          </li>
+          <li class="branch">
+            <div class="b-node"><span class="n">3</span>сценарий</div>
+            <ul class="leaves">
+              <li>заголовок — 30–50% успеха</li>
+              <li>смысл</li>
+              <li>вывод</li>
+              <li>формулировать мысли сильно</li>
+            </ul>
+          </li>
+          <li class="branch">
+            <div class="b-node"><span class="n">4</span>якоря</div>
+            <ul class="leaves">
+              <li>формат</li>
+              <li>детали</li>
+              <li>образ</li>
+              <li>отражают вас, а не высосаны из пальца</li>
+            </ul>
+          </li>
+          <li class="branch">
+            <div class="b-node"><span class="n">5</span>30 дней reels</div>
+            <ul class="leaves">
+              <li>1–2 ролика в день, выкладываем каждый день</li>
+              <li>сняли → выложили → посмотрели отклик</li>
+              <li>за 3 недели видно, что работает → масштабируем</li>
+            </ul>
+          </li>
+          <li class="branch">
+            <div class="b-node"><span class="n">6</span>площадки</div>
+            <ul class="leaves">
+              <li>reels — основа роста</li>
+              <li>telegram и youtube — те же смыслы, но глубже</li>
+              <li>переход по кодовому слову и ссылке в шапке</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="save">
+    <div class="task">
+      <div class="t-title">сохраните свои ответы</div>
+      <button class="copy-btn" id="copy-answers" type="button">скопировать себе ответы</button>
+      <p class="copy-status" id="copy-status" aria-live="polite"></p>
+      <textarea id="copy-fallback" class="copy-fallback" readonly hidden aria-label="Ваши ответы"></textarea>
+      <p class="small-note">Ваши ответы сохраняются только в этом браузере. Если вы откроете материал на другом телефоне или очистите браузер, поля будут пустыми. Нажмите кнопку, и все ответы скопируются одним текстом. Потом вставьте их в заметки, в «Избранное» в Telegram или куда вам удобно, чтобы они всегда были под рукой</p>
+    </div>
+  </section>
+
+  <div class="final">
+    <p class="lead-sm">практикум · 30–31 октября</p>
+    <h2 class="script">блог нового времени</h2>
+    <p class="indent"><span class="br">главное</span> — правильно переложить вашу личность в блог. найти свои темы, формат и узнаваемый контент, разобрать принципы разговорных рилс и структуру сценария. этим и займёмся на практикуме)</p>
+    <p class="price">стоимость участия всего <span class="br">1 000 ₽</span></p>
+    <a class="btn" href="https://elizavetasavkova.ru/praktikum" target="_blank" rel="noopener">присоединиться к практикуму</a>
+    <footer>Елизавета Савкова · @elizavetasavkova</footer>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var labels=["темы","смыслы","формат","детали","образ","стратегия"];
+  var g=document.getElementById("rays"),ns="http://www.w3.org/2000/svg",cx=200,cy=200,R=140;
+  labels.forEach(function(t,i){
+    var a=-Math.PI/2+i*2*Math.PI/labels.length;
+    var x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);
+    var l=document.createElementNS(ns,"line");
+    l.setAttribute("x1",cx+62*Math.cos(a));l.setAttribute("y1",cy+62*Math.sin(a));
+    l.setAttribute("x2",cx+(R-36)*Math.cos(a));l.setAttribute("y2",cy+(R-36)*Math.sin(a));l.setAttribute("class","svg-line");
+    var c=document.createElementNS(ns,"circle");
+    c.setAttribute("cx",x);c.setAttribute("cy",y);c.setAttribute("r",36);c.setAttribute("class","svg-node");
+    var tx=document.createElementNS(ns,"text");
+    tx.setAttribute("x",x);tx.setAttribute("y",y+5);tx.setAttribute("text-anchor","middle");tx.setAttribute("class","svg-text");
+    tx.textContent=t;
+    g.appendChild(l);g.appendChild(c);g.appendChild(tx);
+  });
+
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+
+  document.querySelectorAll("textarea[data-save]").forEach(function(el){
+    var k="scheme-"+el.id,v=get(k);if(v)el.value=v;
+    el.addEventListener("input",function(){set(k,el.value)});
+  });
+
+  var grid=document.getElementById("days-grid"),cnt=document.getElementById("days-count");
+  var state=[];try{state=JSON.parse(get("scheme-days")||"[]")}catch(e){state=[]}
+  function render(){cnt.textContent=state.filter(Boolean).length+" из 30"}
+  for(var i=0;i<30;i++){
+    (function(i){
+      var b=document.createElement("button");b.type="button";b.className="day";b.textContent=i+1;
+      b.setAttribute("aria-pressed",state[i]?"true":"false");
+      b.addEventListener("click",function(){
+        state[i]=!state[i];b.setAttribute("aria-pressed",state[i]?"true":"false");
+        set("scheme-days",JSON.stringify(state));render();
+      });
+      grid.appendChild(b);
+    })(i);
+  }
+  document.getElementById("days-reset").addEventListener("click",function(){
+    state=[];set("scheme-days","[]");
+    grid.querySelectorAll(".day").forEach(function(b){b.setAttribute("aria-pressed","false")});render();
+  });
+  render();
+
+  // аудио-плееры
+  var PLAY='<svg viewBox="0 0 14 14"><path d="M3 1.5v11l9.5-5.5z"/></svg>',PAUSE='<svg viewBox="0 0 14 14"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z"/></svg>';
+  function fmt(s){if(!isFinite(s))return"0:00";s=Math.floor(s);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
+  var players=[];
+  document.querySelectorAll(".audio[data-src]").forEach(function(box){
+    var a=new Audio();a.preload="metadata";a.src=box.dataset.src;
+    box.classList.add("ready");box.innerHTML="";
+    var b=document.createElement("button");b.type="button";b.className="play";b.innerHTML=PLAY;b.setAttribute("aria-label","Слушать: "+box.dataset.title);
+    var body=document.createElement("div");body.className="a-body";
+    body.innerHTML='<span class="a-title"></span><div class="a-row"><div class="a-bar"><div class="a-fill"></div></div><span class="a-time">0:00</span></div>';
+    body.querySelector(".a-title").textContent=box.dataset.title;
+    box.appendChild(b);box.appendChild(body);
+    var bar=body.querySelector(".a-bar"),fill=body.querySelector(".a-fill"),tm=body.querySelector(".a-time");
+    players.push(a);
+    a.addEventListener("loadedmetadata",function(){tm.textContent=fmt(a.duration)});
+    a.addEventListener("timeupdate",function(){fill.style.width=(a.duration?a.currentTime/a.duration*100:0)+"%";tm.textContent=fmt(a.currentTime)+" / "+fmt(a.duration)});
+    a.addEventListener("play",function(){b.innerHTML=PAUSE;players.forEach(function(p){if(p!==a)p.pause()})});
+    a.addEventListener("pause",function(){b.innerHTML=PLAY});
+    a.addEventListener("ended",function(){b.innerHTML=PLAY});
+    b.addEventListener("click",function(){if(a.paused){var p=a.play();if(p&&p.catch)p.catch(function(){})}else a.pause()});
+    bar.addEventListener("click",function(e){var r=bar.getBoundingClientRect();if(a.duration)a.currentTime=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*a.duration});
+  });
+
+  // копирование ответов
+  var btn=document.getElementById("copy-answers"),st=document.getElementById("copy-status"),fb=document.getElementById("copy-fallback");
+  function collect(){
+    var parts=["Мои ответы · Пошаговая схема развития блога",""];
+    document.querySelectorAll("textarea[data-save]").forEach(function(el){
+      var lab=document.querySelector('label[for="'+el.id+'"]');
+      var name=lab?lab.childNodes[0].textContent.trim():el.id;
+      parts.push(name+":");parts.push(el.value.trim()||"—");parts.push("");
+    });
+    parts.push("30 дней reels: "+state.filter(Boolean).length+" из 30");
+    return parts.join("\n");
+  }
+  btn.addEventListener("click",function(){
+    var text=collect();
+    function fallback(){fb.hidden=false;fb.value=text;fb.focus();fb.select();st.textContent="Выделила ответы ниже: скопируйте их вручную"}
+    try{
+      navigator.clipboard.writeText(text).then(function(){fb.hidden=true;st.textContent="Скопировано! Теперь вставьте ответы в заметки"},fallback);
+    }catch(e){fallback()}
+  });
+})();
+</script>
+</body>
+</html>
